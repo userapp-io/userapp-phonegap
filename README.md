@@ -21,7 +21,13 @@ Just include `phonegap.userapp.js` after `angularjs.userapp.js`, like this:
 
 ## Use with the UserApp Ember.js SDK
 
-*Coming soon*
+Automatically sets up a persistent session at login, so that the user only has to sign in once.
+Just include `phonegap.userapp.js` after `ember-userapp.js`, like this:
+
+```html
+<script src="js/ember-userapp.js"></script>
+<script src="js/phonegap.userapp.js"></script>
+```
 
 ## Use with the UserApp JavaScript SDK
 
