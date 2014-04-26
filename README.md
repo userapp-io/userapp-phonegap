@@ -69,7 +69,7 @@ UserApp.removePersistentToken(function(error) {
 
 ## Example
 
-See the [Ionic Example]() for a demo app based on [Ionic](http://ionicframework.com/) (AngularJS + PhoneGap) and UserApp.
+See the [Ionic Example](https://github.com/userapp-io/userapp-ionic) for a demo app based on [Ionic](http://ionicframework.com/) (AngularJS + PhoneGap) and UserApp.
 
 ## Help
 
