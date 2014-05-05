@@ -15,6 +15,7 @@ Automatically sets up a persistent session at login, so that the user only has t
 Just include `phonegap.userapp.js` after `angularjs.userapp.js`, like this:
 
 ```html
+<script src="js/userapp.client.js"></script>
 <script src="js/angularjs.userapp.js"></script>
 <script src="js/phonegap.userapp.js"></script>
 ```
@@ -25,6 +26,7 @@ Automatically sets up a persistent session at login, so that the user only has t
 Just include `phonegap.userapp.js` after `ember-userapp.js`, like this:
 
 ```html
+<script src="js/userapp.client.js"></script>
 <script src="js/ember-userapp.js"></script>
 <script src="js/phonegap.userapp.js"></script>
 ```
