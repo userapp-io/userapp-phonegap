@@ -11,8 +11,7 @@ Download the `phonegap.userapp.js` file or install with bower: `$ bower install 
 
 ## Use with the UserApp AngularJS SDK
 
-Automatically sets up a persistent session at login, so that the user only has to sign in once.
-Just include `phonegap.userapp.js` after `angularjs.userapp.js`, like this:
+Use this library with the [AngularJS SDK](https://app.userapp.io/#/docs/libs/angularjs/) and it will automatically set up a persistent session at login, so that the user only has to sign in once. Just include `phonegap.userapp.js` after `angularjs.userapp.js`, like this:
 
 ```html
 <script src="js/userapp.client.js"></script>
@@ -22,8 +21,7 @@ Just include `phonegap.userapp.js` after `angularjs.userapp.js`, like this:
 
 ## Use with the UserApp Ember.js SDK
 
-Automatically sets up a persistent session at login, so that the user only has to sign in once.
-Just include `phonegap.userapp.js` after `ember-userapp.js`, like this:
+Use this library with the [Ember.js SDK](https://app.userapp.io/#/docs/libs/emberjs/) and it will automatically set up a persistent session at login, so that the user only has to sign in once. Just include `phonegap.userapp.js` after `ember-userapp.js`, like this:
 
 ```html
 <script src="js/userapp.client.js"></script>
@@ -41,7 +39,7 @@ Include `phonegap.userapp.js` after `userapp.client.js`, like this:
 ```
 
 This will extend the `UserApp` object with the methods `setupPersistentToken(callback)` and `removePersistentToken(callback)`.
-After a successful login, call `setupPersistentToken()` to create a persistent token and then set the SDK to use it instead.
+After a successful login, call `setupPersistentToken()` to create a persistent token and then set the [JavaScript SDK](https://app.userapp.io/#/docs/libs/javascript/) to use that token:
 
 ```javascript
 UserApp.User.login(user, function(error, result) {
