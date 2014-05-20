@@ -107,5 +107,8 @@
                 ref.close();
             }
         });
+        ref.addEventListener('exit', function() {
+        	callback(null);
+        });
 	};
 })();

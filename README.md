@@ -46,7 +46,7 @@ Include `phonegap.userapp.js` after `userapp.client.js`, like this:
 <script src="js/phonegap.userapp.js"></script>
 ```
 
-This will extend the `UserApp` object with the methods `setupPersistentToken(callback)`, `removePersistentToken(callback)` and `oauthHandler(url, callback)`.
+This will extend the `UserApp` object with the methods `setupPersistentToken(callback)`, `removePersistentToken(callback)`, and `oauthHandler(url, callback)`.
 After a successful login, call `setupPersistentToken()` to create a persistent token and then set the [JavaScript SDK](https://app.userapp.io/#/docs/libs/javascript/) to use that token:
 
 ```javascript
@@ -75,13 +75,15 @@ UserApp.removePersistentToken(function(error) {
 });
 ```
 
-Use the method `oauthHandler()` to open a new browser with an authorization url and then return a persistent token:
+Use the method `oauthHandler()` to open a new browser with an authorization url and then return a persistent token. If the token is `null`, the browser was closed.
 
 ```javascript
 UserApp.OAuth.getAuthorizationUrl({ provider_id: 'facebook' }, function(error, result) {
   if (!error) {
     UserApp.oauthHandler(result.authorization_url, function(token) {
-      // the user is logged in with the persistent token 'token'
+      if (token) {
+        // the user is logged in with the persistent token 'token'
+      }
     }); 
   }
 });
